@@ -24,5 +24,5 @@ class Profile(models.Model):
         if self.images:
             avatar = self.images.url
         else:
-            avatar = static('img/avatar.svg')
+            avatar = static('images/avatar.svg')
         return avatar
