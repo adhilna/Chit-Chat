@@ -22,6 +22,7 @@ from a_home.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),  # for social authentication
     path('', home_view, name='home'),
     path('profile/', include('a_users.urls')),
 ]
